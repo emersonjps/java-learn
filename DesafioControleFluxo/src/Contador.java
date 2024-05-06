@@ -17,7 +17,7 @@ public class Contador {
     try {
       contar(parametro1, parametro2);
     } catch (Exception e) {
-      System.out.println("O segudo parametro deve ser maior que o primeiro");
+      System.out.println("O segudo parametro deve ser maior que o primeiro " + e);
     }
 
   }
