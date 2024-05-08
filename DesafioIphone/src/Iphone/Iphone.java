@@ -5,8 +5,6 @@ import musica.Musica;
 
 public class Iphone implements Musica, Internet, Telefone{
 
-
-  
   private void verificarInternet() {
     System.out.println("Verificando intenet");
   }
