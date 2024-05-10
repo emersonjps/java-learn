@@ -30,6 +30,10 @@ public class Main {
     bootcamp.setConteudos(curso2);
     bootcamp.setConteudos(mentoria1);
 
+    System.out.println("");
+    System.out.println("-----------------------------------------------------------");
+    System.out.println("");
+
     Dev devEmerson = new Dev();
     devEmerson.setNome("Emerson");
     devEmerson.inscreverBootcamp(bootcamp);
@@ -37,18 +41,26 @@ public class Main {
 
     System.out.println("");
     System.out.println("-----------------------------------------------------------");
+    System.out.println("");
 
     devEmerson.progredir();
+    devEmerson.progredir();
+    devEmerson.progredir();
+    devEmerson.progredir();
+    devEmerson.progredir();
+    devEmerson.progredir();
     System.out.println("Conteudos inscritos Emerson: " + devEmerson.getConteudosInscritos());
-    System.out.println("XP: " + devEmerson.calcularTotalXp());
+    System.out.println("Emerson XP: " + devEmerson.calcularTotalXp());
 
     System.out.println("");
     System.out.println("-----------------------------------------------------------");
+    System.out.println("");
 
     System.out.println("Conteudos concluidos Emerson: " + devEmerson.getConteudosConcluidos());
 
     System.out.println("");
     System.out.println("-----------------------------------------------------------");
+    System.out.println("");
     Dev devCamila = new Dev();
     devCamila.setNome("Camila");
     devCamila.inscreverBootcamp(bootcamp);
@@ -56,10 +68,13 @@ public class Main {
 
     System.out.println("");
     System.out.println("-----------------------------------------------------------");
+    System.out.println("");
 
     System.out.println("Conteudos concluidos Camila: " + devCamila.getConteudosConcluidos());
-    System.out.println("XP: " + devEmerson.calcularTotalXp());
+    System.out.println("Camila XP: " + devCamila.calcularTotalXp());
 
-
+    System.out.println("");
+    System.out.println("-----------------------------------------------------------");
+    System.out.println("");
   }
 }
