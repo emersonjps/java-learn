@@ -1,33 +1,35 @@
-import java.time.LocalDate;
-
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import com.example.Pesssoa;
+
+
 
 public class PessoaTest {
   String nome = "Emerson";
   int idade = 23;
 
-  Pesssoa pesssoa = new Pesssoa(nome, LocalDate.of(2001, 2, 13));
+  Pesssoa emerson = new Pesssoa(nome, LocalDate.of(2001, 2, 13));
 
   @Test
   void validarCalculoIdade() {
-    Assertions.assertEquals(idade, pesssoa.getIdade());
+    assertEquals(idade, emerson.getIdade());
   }
 
   @Test
   void verificaNome() {
-    Assertions.assertEquals(nome, pesssoa.getNome());
+    assertEquals(nome, emerson.getNome());
   }
 
   @Test
   void verificaIdade() {
-    Assertions.assertEquals(idade, pesssoa.getIdade());
+    assertEquals(idade, emerson.getIdade());
   }
 
   @Test
   void verificaMaiorIdade() {
-    Assertions.assertTrue(pesssoa.maiorIdade());
+    assertTrue(emerson.maiorIdade());
   }
 }
